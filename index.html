@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <nav style="text-align: right;">
+        <a href="../1-HTML-Basics/index.html">Home</a>
+        <a href="../2-CSS-Basics/index.html">Away</a>
+    </nav>
+
+    <h1>YouTube Video Survey</h1>
+    <p>Please watch the video and take the Survey!</p>
+    <iframe src="https://www.youtube.com/embed/owsfdh4gxyc"
+        frameborder="0"
+        width="560" height="315"
+        allowfullscreen>
+    </iframe>
+
+    <div style="border: solid 2px black; padding: .5rem; background-color: pink;">
+        <form>
+            <fieldset>
+                <legend>Rating</legend>
+                <p>
+                    <input type="radio" name="rating" id="rating0" value="rating0" />
+                    <label for="rating0">Good</label>
+                </p>
+                <p>
+                    <input type="radio" name="rating" id="rating1" value="rating1" />
+                    <label for="rating1">Great</label>
+                </p>
+                <p>
+                    <input type="radio" name="rating" id="rating2" value="rating2" />
+                    <label for="rating2">Super Great</label>
+                </p>
+                <p>
+                    <input type="radio" name="rating" id="rating3" value="rating3" />
+                    <label for="rating3">Thanks, I hate it</label>
+                </p>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>It Was:</legend>
+                <p>
+                    <input type="checkbox" name="quality" id="video" value="video" />
+                    <label for="video">A Video</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="quality" id="pink" value="pink" />
+                    <label for="pink">Pink</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="quality" id="bird" value="bird" />
+                    <label for="bird">Bird</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="quality" id="hot" value="hot" />
+                    <label for="hot">Hot</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="quality" id="spicy" value="spicy" />
+                    <label for="spicy">Spicy</label>
+                </p>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Survey Submission</legend>
+                <p>
+                    <label for="comments">Tell us what you saw:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit Survey</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2006 The Example Company</p>
+        <p>
+            <a href="#about">About Us</a> -
+            <a href="#policy">Policy</a> -
+            <a href="#contact">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>
